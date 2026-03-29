@@ -1,12 +1,24 @@
 service:
   http:
     type: NodePort
+
 gitea:
   admin:
     username: tob
-    password: ""
     email: ""
-  persistence:
-    enable: true
-    storageClass: nfs-client
-    size: 10Gi
+    password: ""
+
+persistence:
+  enabled: true
+  storageClass: nfs-client
+  size: 10Gi
+
+postgresql-ha:
+  enabled: false
+
+postgresql:
+  enabled: true
+  primary:
+    persistence:
+      storageClass: nfs-client
+      size: 5Gi
