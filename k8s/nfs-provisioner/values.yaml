@@ -1,0 +1,6 @@
+nfs:
+  server: ""
+  path: /mnt/data/k3s-pv
+storageClass:
+  name: nfs-client
+  defaultClass: true
