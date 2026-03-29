@@ -7,6 +7,9 @@ gitea:
     username: tob
     email: ""
     password: ""
+  config:
+    database:
+      DB_TYPE: sqlite3
 
 persistence:
   enabled: true
@@ -17,8 +20,10 @@ postgresql-ha:
   enabled: false
 
 postgresql:
-  enabled: true
-  primary:
-    persistence:
-      storageClass: nfs-client
-      size: 5Gi
+  enabled: false
+
+redis-cluster:
+  enabled: false
+
+valkey-cluster:
+  enabled: false
