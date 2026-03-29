@@ -1,0 +1,12 @@
+service:
+  http:
+    type: NodePort
+gitea:
+  admin:
+    username: tob
+    password: ""
+    email: ""
+  persistence:
+    enable: true
+    storageClass: nfs-client
+    size: 10Gi

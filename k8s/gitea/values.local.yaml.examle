@@ -1,0 +1,4 @@
+gitea:
+  admin:
+    password: "password"
+    email: "email"
