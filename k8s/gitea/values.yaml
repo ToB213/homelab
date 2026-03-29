@@ -27,3 +27,7 @@ redis-cluster:
 
 valkey-cluster:
   enabled: false
+
+podSecurityContext:
+  fsGroup: 1000
+  fsGroupChangePolicy: "OnRootMismatch"
